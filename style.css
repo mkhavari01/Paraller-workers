@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fefefe;
+    width: 725px;
+}
+#todo,#doing,#done{
+    margin: 10px;
+    height: calc(93vh/3);
+    border: solid #121212 .5px;
+    /* position: relative; */
+    overflow: scroll;
+    /* box-shadow: 1px 5px 10px 0px #121212; */
+}
+#todo .documentNumber{
+    left: 670px;
+    top: 20px;
+}
+#doing .workerNumber{
+    position: absolute;
+    left: 680px;
+    top: 227px;
+}
+#doing .title{
+    position: absolute;
+    top: 225px;
+    background: #121212;
+    border-radius: 3px;
+    color: #fefefe;
+}
+.workerName{
+    position: absolute;
+    bottom: 237px;
+    border: solid #121212 .1px;
+    padding: 3px;
+    border-radius: 50%;
+}
+#doing .workspace{
+    border: solid #121212 .1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    display: block;
+    left: 30px;
+    bottom: 40px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    /* width: 150px;
+    height: 150px; */
+    outline: none;
+    border-radius: 50%;
+    position: absolute;
+    background: #576916;
+    /* right: 10%;
+    bottom: 35%; */
+    color: #fefefe;
+    /* font-size: 40px; */
+    border: none;
+}
+@keyframes move1 {
+    from {top: 32px;
+        left: 12px;
+    }
+    to {top: 271px;
+        left: 77px;
+    }
+  }
+  @keyframes move2 {
+    from {top: 32px;
+        left: 12px;
+    }
+    to {top: 271px;
+        left: 247px;
+    }
+  }
+@keyframes move3 {
+    from {top: 32px;
+        left: 12px;
+    }
+    to {top: 271px;
+        left: 418px;
+    }
+  }
+@keyframes move4 {
+    from {top: 32px;
+        left: 12px;
+    }
+    to {top: 271px;
+        left: 588px;
+    }
+  }
+.move1{
+    position: absolute;
+    animation-name: move1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.move2{
+    position: absolute;
+    animation-name: move2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.move3{
+    position: absolute;
+    animation-name: move3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.move4{
+    position: absolute;
+    animation-name: move4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
